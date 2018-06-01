@@ -1,0 +1,217 @@
+.palette-result {
+  width: calc((100% - 40px)/3);
+  padding: 10px;
+  float: left;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+
+#palette-info-wrapper {
+padding: 10px;
+border-radius: 10px;
+margin-top: 20px;
+-webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+
+#palette-info-wrapper h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.palette-container {
+  position: relative;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.palette-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.palette-colour {
+  width: 20%;
+  height: 100px;
+  float: left;
+}
+.palette-result p {
+  padding-top: 12px;
+}
+.fav {
+  display: flex;
+  justify-content: center;
+  margin-top: -4px;
+  color: black;
+  border-radius: 10px;
+  float: right;
+  width: 80px;
+  padding: 4px 1px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.fav:hover {
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+}
+.fav span {
+  opacity: 0.7;
+}
+.fav svg {
+  opacity: 0.6;
+  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-right: -6px;
+}
+.faved svg path {
+  fill: #ff4f8b;
+}
+
+/***** Tags *****/
+.description-tag-box {
+  width: 100%;
+}
+.description-tag {
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  padding: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.description-tag:hover {
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+}
+
+/***** Buttons *****/
+.btn-row {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.btn {
+  text-decoration: none;
+  padding: 2px 4px;
+  display: inline-block;
+  color: black;
+  margin-left: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: 0.2s;
+  opacity: 0.85;
+}
+.btn img {
+  margin-bottom: -3px;
+  width: 14px;
+  height: 14px;
+}
+.btn svg {
+    width: 14px;
+    height: 14px;
+    margin-bottom: -3px;
+}
+
+/***** Colour Codes *****/
+.colour-code {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.colour-code > span {
+  padding: 4px;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+}
+
+/***** Embedding *****/
+#embed-code {
+  display:none;
+  max-width: 500px;
+  height: 400px;
+  width: 100%;
+}
+#embed-code h2 {
+  margin-top: 0;
+}
+#embed-code > pre {
+  padding: 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+#embed-code code {
+}
+/* Adjust plugin to show content on click */
+.featherlight .featherlight-inner {
+  display: block !important;
+}
+
+
+
+@media screen and (min-width: 1001px) {
+  .palette-result:nth-child(3n+2) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .palette-result {
+    width: calc((100% - 20px)/2);
+  }
+
+  .palette-result:nth-child(2n) {
+    margin-left: 20px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .palette-result {
+    width: 100%;
+  }
+
+  .palette-result:nth-child(2n) {
+    margin-left: 0;
+  }
+}

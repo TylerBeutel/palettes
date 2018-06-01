@@ -1,0 +1,83 @@
+/*
+ * Sets defaults to 0.
+ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*
+ * Wraps all content. Required for
+ * keeping footer at the bottom.
+ */
+.container {
+   min-height: 100%;
+   position: relative;
+   padding-bottom: 75px;
+}
+
+/*
+ * Pads and centralises content
+ * when viewed on large screens.
+ */
+.content-wrap {
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  float: none;
+  max-width: 1050px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+/***** Generic *****/
+h2 {
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: red;
+}
+
+/* Default Input Styling */
+input[type=text], input[type=password], input[type=submit] {
+  height: 36px;
+  border: none;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  max-width: 400px;
+  padding-left: 10px;
+}
+input[type=submit] {
+  display: block;
+  padding: 8px 20px;
+  width: 100%; max-width: 100px;
+  font-size: 16px;
+  color: white;
+  background-color: #343840;
+}
+@media screen and (max-width: 650px) {
+  input[type=text] { max-width: 100% }
+  input[type=submit] { margin: 0 auto; }
+}
+
+/*
+ * Add to body to stop 'transition'
+ * from affecting webpage while using
+ * to change the page.
+ *
+ * source: https://stackoverflow.com/questions/11131875/what-is-the-cleanest-way-to-disable-css-transition-effects-temporarily
+ */
+/* .notransition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+} */

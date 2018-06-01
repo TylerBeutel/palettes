@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+footer {
+  background-color: #343840;
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  padding: 15px;
+}

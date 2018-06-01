@@ -1,0 +1,155 @@
+.palette-result {
+  width: 100%;
+  padding: 10px;
+  float: none;
+  margin-bottom: 20px;
+}
+.palette-container {
+  position: relative;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+}
+.palette-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  background-color: rgba(0,0,0,0.2);
+}
+.palette-colour {
+  width: 20%;
+  height: 100px;
+  float: left;
+}
+
+
+/***** INPUT FIELDS *****/
+input {
+  height: 36px;
+  border: none;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+input[type=text] {
+  width: 100%;
+  max-width: 400px;
+  padding-left: 10px;
+}
+
+input[type=submit] {
+  display: block;
+  padding: 8px 20px;
+  width: 100%; max-width: 100px;
+  font-size: 16px;
+  color: white;
+  background-color: #343840;
+}
+
+/***** TAG INPUT *****/
+#tag-input-container {
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+  margin-top: 5px;
+  max-width: 400px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+#tag-input {
+  position: absolute;
+  width: calc(100% - 36px);
+}
+#tag-add {
+  position: absolute;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  background-color: #343840;
+  padding: 6px;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+}
+#tag-add span {
+  width: 22px;
+  height: 2px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 16px;
+  left: 7px;
+}
+#tag-add span:first-child {
+  transform: rotateZ(90deg);
+}
+
+
+/***** TAG BOX *****/
+#tag-box {
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+#tag-box .tag {
+  border-radius: 10px;
+  display: block;
+  float: left;
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 10px;
+  float: left;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  /* overflow: hidden; */
+}
+#tag-box .tag:hover {
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+}
+#tag-box .tag-value {
+  float: left;
+}
+#tag-box .tag-close {
+  float: left;
+  margin-left: 6px;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+#tag-box .tag-close span {
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  border: 1px solid #ccc;
+  top: 8px;
+  left: 0px;
+}
+#tag-box .tag-close span:first-child {
+  transform: rotateZ(45deg);
+}
+#tag-box .tag-close span:last-child {
+    transform: rotateZ(-45deg);
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+
+  input[type=text], #tag-input-container { max-width: 100% }
+  input[type=submit] { margin: 0 auto; }
+
+}

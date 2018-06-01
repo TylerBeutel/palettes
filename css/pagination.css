@@ -1,0 +1,66 @@
+.pagination-wrap {
+  display: block;
+  margin: 20px auto;
+  overflow: hidden;
+  width: 160px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.pagination-current {
+  display: block;
+  float: left;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 10px;
+}
+.pagination-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+}
+.pagination-button:hover {
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+}
+.pagination-arr {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.pagination-arr span:first-child,
+.pagination-arr span:last-child {
+  position: absolute;
+  background-color: #ccc;
+  width: 16px;
+  height: 2px;
+  left: 11px;
+}
+.pagination-arr span:first-child {
+  top: 25px;
+  transform: rotateZ(45deg);
+}
+.pagination-arr span:last-child {
+  top: 15px;
+  transform: rotateZ(-45deg);
+}
+.pagination-right {
+  transform: rotateZ(180deg);
+}
+.inactive, .inactive:hover {
+  box-shadow: none;
+  background-color: #eee;
+  opacity: 0.6;
+  cursor: auto;
+}
